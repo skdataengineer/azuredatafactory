@@ -1,0 +1,9 @@
+{
+	"name": "saichetanfactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9a54d46b-427f-4b67-86e6-3907fafe658f",
+		"tenantId": "126a78ce-8af2-4631-8742-b0f325d3ed1b"
+	}
+}
