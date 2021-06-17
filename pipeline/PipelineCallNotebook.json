@@ -1,0 +1,56 @@
+{
+	"name": "PipelineCallNotebook",
+	"properties": {
+		"activities": [
+			{
+				"name": "Append variable1",
+				"type": "AppendVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "clientName",
+					"value": "\"Client3\""
+				}
+			},
+			{
+				"name": "Notebook1",
+				"type": "SynapseNotebook",
+				"dependsOn": [
+					{
+						"activity": "Append variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebook": {
+						"referenceName": "NotebookWriteDataToParquet",
+						"type": "NotebookReference"
+					},
+					"snapshot": true
+				}
+			}
+		],
+		"variables": {
+			"clientName": {
+				"type": "Array",
+				"defaultValue": [
+					"Client1",
+					"Client2"
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-06-08T02:31:59Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

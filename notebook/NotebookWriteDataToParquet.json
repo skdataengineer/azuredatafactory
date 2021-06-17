@@ -1,0 +1,560 @@
+{
+	"name": "NotebookWriteDataToParquet",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "mynewsparkpool",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"a917b8f0-def8-4c49-b851-93e7a2021cec": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"deaths": 0,
+										"confirmed": 262,
+										"country_region": "Worldwide",
+										"id": "338995",
+										"updated": "2020-01-21",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 313,
+										"confirmed_change": 51,
+										"country_region": "Worldwide",
+										"id": "338996",
+										"updated": "2020-01-22",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 578,
+										"confirmed_change": 265,
+										"country_region": "Worldwide",
+										"id": "338997",
+										"updated": "2020-01-23",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 841,
+										"confirmed_change": 263,
+										"country_region": "Worldwide",
+										"id": "338998",
+										"updated": "2020-01-24",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 1320,
+										"confirmed_change": 479,
+										"country_region": "Worldwide",
+										"id": "338999",
+										"updated": "2020-01-25",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 2014,
+										"confirmed_change": 694,
+										"country_region": "Worldwide",
+										"id": "339000",
+										"updated": "2020-01-26",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 2798,
+										"confirmed_change": 784,
+										"country_region": "Worldwide",
+										"id": "339001",
+										"updated": "2020-01-27",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 4593,
+										"confirmed_change": 1795,
+										"country_region": "Worldwide",
+										"id": "339002",
+										"updated": "2020-01-28",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 6065,
+										"confirmed_change": 1472,
+										"country_region": "Worldwide",
+										"id": "339003",
+										"updated": "2020-01-29",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 7818,
+										"confirmed_change": 1753,
+										"country_region": "Worldwide",
+										"id": "339004",
+										"updated": "2020-01-30",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									}
+								],
+								"schema": {
+									"id": "int",
+									"updated": "date",
+									"confirmed": "int",
+									"confirmed_change": "int",
+									"deaths": "int",
+									"deaths_change": "smallint",
+									"recovered": "int",
+									"recovered_change": "int",
+									"latitude": "double",
+									"longitude": "double",
+									"iso2": "string",
+									"iso3": "string",
+									"country_region": "string",
+									"admin_region_1": "string",
+									"iso_subdivision": "string",
+									"admin_region_2": "string",
+									"load_time": "int"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"updated"
+									],
+									"seriesFieldKeys": [
+										"id"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"6bb2ff7f-ab53-46e3-914f-8e739a7e0b30": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"deaths": 0,
+										"confirmed": 262,
+										"country_region": "Worldwide",
+										"id": "338995",
+										"updated": "2020-01-21",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 313,
+										"confirmed_change": 51,
+										"country_region": "Worldwide",
+										"id": "338996",
+										"updated": "2020-01-22",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 578,
+										"confirmed_change": 265,
+										"country_region": "Worldwide",
+										"id": "338997",
+										"updated": "2020-01-23",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 841,
+										"confirmed_change": 263,
+										"country_region": "Worldwide",
+										"id": "338998",
+										"updated": "2020-01-24",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 1320,
+										"confirmed_change": 479,
+										"country_region": "Worldwide",
+										"id": "338999",
+										"updated": "2020-01-25",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 2014,
+										"confirmed_change": 694,
+										"country_region": "Worldwide",
+										"id": "339000",
+										"updated": "2020-01-26",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 2798,
+										"confirmed_change": 784,
+										"country_region": "Worldwide",
+										"id": "339001",
+										"updated": "2020-01-27",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 4593,
+										"confirmed_change": 1795,
+										"country_region": "Worldwide",
+										"id": "339002",
+										"updated": "2020-01-28",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 6065,
+										"confirmed_change": 1472,
+										"country_region": "Worldwide",
+										"id": "339003",
+										"updated": "2020-01-29",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 7818,
+										"confirmed_change": 1753,
+										"country_region": "Worldwide",
+										"id": "339004",
+										"updated": "2020-01-30",
+										"load_time": "2021-06-08T00:09:22.461Z"
+									}
+								],
+								"schema": {
+									"id": "int",
+									"updated": "date",
+									"confirmed": "int",
+									"confirmed_change": "int",
+									"deaths": "int",
+									"deaths_change": "smallint",
+									"recovered": "int",
+									"recovered_change": "int",
+									"latitude": "double",
+									"longitude": "double",
+									"iso2": "string",
+									"iso3": "string",
+									"country_region": "string",
+									"admin_region_1": "string",
+									"iso_subdivision": "string",
+									"admin_region_2": "string",
+									"load_time": "int"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"updated"
+									],
+									"seriesFieldKeys": [
+										"id"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"da2cdb0c-4080-4d99-a6ac-88bbe2547bf7": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"_c3": "City",
+										"_c5": "CountryRegion",
+										"_c0": "AddressID",
+										"_c4": "StateProvince",
+										"_c8": "ModifiedDate",
+										"_c1": "AddressLine1",
+										"_c7": "rowguid",
+										"_c2": "AddressLine2",
+										"_c6": "PostalCode"
+									},
+									{
+										"_c3": "Bothell",
+										"_c5": "United States",
+										"_c0": "9",
+										"_c4": "Washington",
+										"_c8": "01-07-2006 00:00",
+										"_c1": "8713 Yosemite Ct.",
+										"_c7": "{268AF621-76D7-4C78-9441-144FD139821A}",
+										"_c6": "98011"
+									},
+									{
+										"_c3": "Bothell",
+										"_c5": "United States",
+										"_c0": "11",
+										"_c4": "Washington",
+										"_c8": "01-04-2007 00:00",
+										"_c1": "1318 Lasalle Street",
+										"_c7": "{981B3303-ACA2-49C7-9A96-FB670785B269}",
+										"_c6": "98011"
+									},
+									{
+										"_c3": "Dallas",
+										"_c5": "United States",
+										"_c0": "25",
+										"_c4": "Texas",
+										"_c8": "01-09-2006 00:00",
+										"_c1": "9178 Jumping St.",
+										"_c7": "{C8DF3BD9-48F0-4654-A8DD-14A67A84D3C6}",
+										"_c6": "75201"
+									},
+									{
+										"_c3": "Phoenix",
+										"_c5": "United States",
+										"_c0": "28",
+										"_c4": "Arizona",
+										"_c8": "01-09-2005 00:00",
+										"_c1": "9228 Via Del Sol",
+										"_c7": "{12AE5EE1-FC3E-468B-9B92-3B970B169774}",
+										"_c6": "85004"
+									},
+									{
+										"_c3": "Montreal",
+										"_c5": "Canada",
+										"_c0": "32",
+										"_c4": "Quebec",
+										"_c8": "01-08-2006 00:00",
+										"_c1": "26910 Indela Road",
+										"_c7": "{84A95F62-3AE8-4E7E-BBD5-5A6F00CD982D}",
+										"_c6": "H1Y 2H5"
+									},
+									{
+										"_c3": "Bellevue",
+										"_c5": "United States",
+										"_c0": "185",
+										"_c4": "Washington",
+										"_c8": "01-09-2006 00:00",
+										"_c1": "2681 Eagle Peak",
+										"_c7": "{7BCCF442-2268-46CC-8472-14C44C14E98C}",
+										"_c6": "98004"
+									},
+									{
+										"_c3": "Renton",
+										"_c5": "United States",
+										"_c0": "297",
+										"_c4": "Washington",
+										"_c8": "01-08-2006 00:00",
+										"_c1": "7943 Walnut Ave",
+										"_c7": "{52410DA4-2778-4B1D-A599-95746625CE6D}",
+										"_c6": "98055"
+									},
+									{
+										"_c3": "Burnaby",
+										"_c5": "Canada",
+										"_c0": "445",
+										"_c4": "British Columbia",
+										"_c8": "01-09-2006 00:00",
+										"_c1": "6388 Lake City Way",
+										"_c7": "{53572F25-9133-4A8B-A065-102FF35416EE}",
+										"_c6": "V5A 3A6"
+									},
+									{
+										"_c3": "Toronto",
+										"_c5": "Canada",
+										"_c0": "446",
+										"_c4": "Ontario",
+										"_c8": "01-08-2005 00:00",
+										"_c1": "52560 Free Street",
+										"_c7": "{801A1DFC-5125-486B-AA84-CCBD2EC57CA4}",
+										"_c6": "M4B 1V7"
+									}
+								],
+								"schema": {
+									"_c0": "string",
+									"_c1": "string",
+									"_c2": "string",
+									"_c3": "string",
+									"_c4": "string",
+									"_c5": "string",
+									"_c6": "string",
+									"_c7": "string",
+									"_c8": "string"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"_c0"
+									],
+									"seriesFieldKeys": [
+										"_c0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/d994043b-2fa5-444d-ace1-4732b4810c08/resourceGroups/usresourcegroup/providers/Microsoft.Synapse/workspaces/synapseworkspaceforchetan/bigDataPools/mynewsparkpool",
+				"name": "mynewsparkpool",
+				"type": "Spark",
+				"endpoint": "https://synapseworkspaceforchetan.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/mynewsparkpool",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"blob_account_name = \"pandemicdatalake\"\r\n",
+					"blob_container_name = \"public\"\r\n",
+					"blob_relative_path = \"curated/covid-19/bing_covid-19_data/latest/bing_covid-19_data.parquet\"\r\n",
+					"blob_sas_token = r\"\"\r\n",
+					"# Allow SPARK to read from Blob remotely\r\n",
+					"wasbs_path = 'wasbs://%s@%s.blob.core.windows.net/%s' % (blob_container_name, blob_account_name, blob_relative_path)\r\n",
+					"\r\n",
+					"spark.conf.set(\r\n",
+					"    'fs.azure.sas.%s.%s.blob.core.windows.net' % (blob_container_name, blob_account_name),\r\n",
+					"    blob_sas_token)\r\n",
+					"df = spark.read.parquet(wasbs_path)\r\n",
+					"display(df.limit(10))\r\n",
+					"\r\n",
+					"df.write.parquet(\"abfss://testcontainer@chetandatalake.dfs.core.windows.net/AddressParquet\")"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.parquet(\"abfss://testcontainer@chetandatalake.dfs.core.windows.net/AddressParquet\")\r\n",
+					"display(df.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 5
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.csv(\"abfss://testcontainer@chetandatalake.dfs.core.windows.net/Address.csv\")\r\n",
+					"display(df.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 6
+			}
+		]
+	}
+}
